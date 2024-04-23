@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"name": "01ContentProject",
+			"path": ".."
+		},
+		{
+			"name": ".vscode",
+			"path": "C:/Users/User/.vscode"
+		},
+		{
+			"path": "../../02Home"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "01ContentProject"
+	}
+}
