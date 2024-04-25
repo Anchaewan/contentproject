@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/form.css" />
   </head>
   <body>
-    <form action="">
+    <form class="form">
       <fieldset>
         <legend>온라인서식의 제목</legend>
         <ul>
@@ -16,12 +16,18 @@
           <li><input type="password" /> 비밀번호 입력</li>
           <li><input type="file" /> 첨부파일</li>
           <li>
-            <input type="checkbox" />선택1 <input type="checkbox" />선택2
-            <input type="checkbox" />선택3
+            <input type="checkbox" id="check1" />
+            <label for="check1">선택1</label>
+            <input type="checkbox" id="check2" />
+            <label for="check2">선택2</label>
+            <input type="checkbox" id="check3" />
+            <label for="check3">선택3</label>
           </li>
           <li>
-            <input type="radio" name="radiogroup" />선택1 <input type="radio" name="radiogroup"/>선택2
-            <input type="radio" name="radiogroup"/>선택3 <input type="radio" name="radiogroup"/>선택4
+            <input type="radio" name="radiogroup" />선택1
+            <input type="radio" name="radiogroup" />선택2
+            <input type="radio" name="radiogroup" />선택3
+            <input type="radio" name="radiogroup" />선택4
           </li>
           <li><input type="url" /> 도메인주소 입력</li>
           <li><input type="email" /> 이메일 입력</li>
@@ -52,45 +58,278 @@
     <br />
     <br />
     <h2>폼4</h2>
-    <form action="">
-        <fieldset>
-            <legend>상세검색</legend>
-            <table class="search">
-                <colgroup>
-                  <col style="width: 88px;" />
-                  <col />
-                </colgroup>
-                <tbody>
-                    <tr>
-                        <th>채용구분</th>
-                        <td>
-                            <ul class="check-list">
-                                <li><input type="checkbox" />전체</li>
-                                <li><input type="checkbox" />신입</li>
-                                <li><input type="checkbox" />경력</li>
-                                <li><input type="checkbox" />Foreigner</li>
-                                <li><input type="checkbox" />계약</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>직군구분</th>
-                        <td>
-                            <ul class="check-list">
-                                <li><input type="checkbox" />전체</li>
-                                <li><input type="checkbox" />Engineering</li>
-                                <li><input type="checkbox" />Design</li>
-                                <li><input type="checkbox" />Business</li>
-                                <li><input type="checkbox" />Staff</li>
-                                <li><input type="checkbox" />기타</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <input type="search" />
-            <button type="submit">찾기</button>
-              </body>
-        </fieldset>
+    <form class="search">
+      <fieldset>
+        <legend>상세검색</legend>
+        <table>
+          <colgroup>
+            <col style="width: 88px" />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>채용구분</th>
+              <td>
+                <ul class="check-list">
+                  <li><input type="checkbox" id="check1_1" /><label for="check1_1">전체</label></li>
+                  <li><input type="checkbox" id="check1_2" /><label for="check1_2">신입</label></li>
+                  <li><input type="checkbox" id="check1_3" /><label for="check1_3">경력</label></li>
+                  <li>
+                    <input type="checkbox" id="check1_4" /><label for="check1_4">Foreigner</label>
+                  </li>
+                  <li><input type="checkbox" id="check1_5" /><label for="check1_5">계약</label></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>직군구분</th>
+              <td>
+                <ul class="check-list">
+                  <li>
+                    <input type="checkbox" class="check-type1" id="check1_6" />
+                    <label for="check1_6">전체</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="check-type1" id="check1_7" />
+                    <label for="check1_7">Engineering</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="check-type1" id="check1_8" /><label for="check1_8"
+                      >Design</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check1_9" /><label for="check1_9">Business</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check1_10" /><label for="check1_10">Staff</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check1_11" /><label for="check1_11">기타</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="search__word">
+          <input type="search" />
+          <button type="submit">찾기</button>
+        </div>
+      </fieldset>
     </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>폼6</h2>
+    <form class="form6">
+      <fieldset>
+        <table class="table6">
+          <colgroup>
+            <col style="width: 88px" />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>주거형태</th>
+              <td>
+                <ul class="check-list6">
+                  <li>
+                    <input type="checkbox" id="checkbox6_1" class="check-type6" /><label
+                      for="checkbox6_1"
+                      >아파트</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_2" class="check-type6" /><label
+                      for="checkbox6_2"
+                      >연립/빌라</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_3" class="check-type6" /><label
+                      for="checkbox6_3"
+                      >단독주택</label
+                    >
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>분야</th>
+              <td>
+                <ul class="check-list6">
+                  <li>
+                    <input type="checkbox" id="checkbox6_4" class="check-type6" /><label
+                      for="checkbox6_4"
+                      >리모델링</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_5" class="check-type6" /><label
+                      for="checkbox6_5"
+                      >키친&바스</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_6" class="check-type6" /><label
+                      for="checkbox6_6"
+                      >빌트인수납</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_7" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >가구</label
+                    >
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>비용</th>
+              <td>
+                <ul class="check-list6">
+                  <li>
+                    <input type="checkbox" id="checkbox6_8" class="check-type6" /><label
+                      for="checkbox6_8"
+                      >500만원 미만</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_9" class="check-type6" /><label
+                      for="checkbox6_9"
+                      >500~1000만원</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_10" class="check-type6" /><label
+                      for="checkbox6_10"
+                      >1000~2000만원</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_11" class="check-type6" /><label
+                      for="checkbox6_11"
+                      >2000~3000만원</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_12" class="check-type6" /><label
+                      for="checkbox6_12"
+                      >3000~4000만원</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_13" class="check-type6" /><label
+                      for="checkbox6_13"
+                      >4000~5000만원</label
+                    >
+                  </li>
+
+                  <li>
+                    <input type="checkbox" id="checkbox6_14" class="check-type6" /><label
+                      for="checkbox6_14"
+                      >5000만원 이상</label
+                    >
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>스타일</th>
+              <td>
+                <ul class="check-list6">
+                  <li>
+                    <input type="checkbox" id="checkbox6_15" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >모던</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_16" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >클래식</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_17" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >내추럴</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_18" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >화이트</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_19" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >모노톤</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_20" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >파스텔</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_21" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >로맨틱</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_22" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >유니크</label
+                    >
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>평형대</th>
+              <td>
+                <ul class="check-list6">
+                  <li>
+                    <input type="checkbox" id="checkbox6_23" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >20평형</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_24" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >30평형</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_25" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >40평형</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkbox6_26" class="check-type6" /><label
+                      for="checkbox6_7"
+                      >50평형이상</label
+                    >
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="submit6">
+          <button type="submit" class="btn6_1">선택 적용하기</button>
+          <button type="submit" class="btn6_2">초기화</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
 </html>

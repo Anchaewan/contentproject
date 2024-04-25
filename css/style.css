@@ -1,70 +1,70 @@
 :root {
-    /*JS : var 이름 = 내용;*/
-    /*CSS : --이름 : 내용;*/
+  /*JS : var 이름 = 내용;*/
+  /*CSS : --이름 : 내용;*/
 
-    --line:  #393D46;
-    --line2: #6a6a6a;
-    --line3: #9499a4;
-    --line4: #ACB0B6;
-    --line5: #e1e1e1;
-    --black: #000;
-    --white: #fff;
-    --bigButton: #60636f;
+  --line: #393d46;
+  --line2: #6a6a6a;
+  --line3: #9499a4;
+  --line4: #acb0b6;
+  --line5: #e1e1e1;
+  --black: #000;
+  --white: #fff;
+  --bigButton: #60636f;
 }
 
 body {
-    padding: 30px;
-  }
-  .table-type1 {
-    border-top: 2px solid var(--line);
-    border-bottom: 2px solid var(--line3);
-    thead {
-      border-bottom: 1px solid var(--line4);
-      th {
-        padding: 17px 0px;
-        color: #000;
-        font-size: 16px;
-        font-weight: 700;
-      }
+  padding: 30px;
+}
+.table-type1 {
+  border-top: 2px solid var(--line);
+  border-bottom: 2px solid var(--line3);
+  thead {
+    border-bottom: 1px solid var(--line4);
+    th {
+      padding: 17px 0px;
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
     }
   }
-  tbody {
-    tr {
-      border-bottom: 1px solid var(--line5);
-      &:last-child {
-        /* tr:last-child */
-        border-bottom: none;
-      }
-    }
-    td {
-        color: var(--line2);
-        font-size: 16px;
-        padding:  19px 20px 19px 20px;
-      + td {
-        /* td + td */
-        border-left: 1px solid var(--line5);
-      }
-    }
-    [rowspan] {
-      /* .table-type10 [rowspan] */
-      border-right: 1px solid var(--line5);
+}
+tbody {
+  tr {
+    border-bottom: 1px solid var(--line5);
+    &:last-child {
+      /* tr:last-child */
+      border-bottom: none;
     }
   }
+  td {
+    color: var(--line2);
+    font-size: 16px;
+    padding: 19px 20px 19px 20px;
+    + td {
+      /* td + td */
+      border-left: 1px solid var(--line5);
+    }
+  }
+  [rowspan] {
+    /* .table-type10 [rowspan] */
+    border-right: 1px solid var(--line5);
+  }
+}
 
 .btn-gray {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 105px;
-    height: 28px;
-    border-radius: 14px;
-    background: var(--bigButton);
-    color: var(--white);
-    font-size: 16px;
-    text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+  height: 28px;
+  border-radius: 14px;
+  background: var(--bigButton);
+  color: var(--white);
+  font-size: 16px;
+  text-align: center;
 }
 
 .align-both {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }

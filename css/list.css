@@ -175,14 +175,6 @@ body {
   padding-top: 7px;
 }
 
-
-
-
-
-
-
-
-
 .h2h2 {
   font-size: 40px;
 }
@@ -194,7 +186,7 @@ body {
 }
 
 .submenu {
-  color: #AD8A70;
+  color: #ad8a70;
   font-size: 16px;
   font-weight: 300;
   padding-bottom: 35px;
@@ -210,7 +202,7 @@ body {
 }
 
 .list8-1 {
-   .date {
+  .date {
     width: 315px;
     color: #000;
     font-size: 13px;
@@ -227,7 +219,7 @@ body {
   .main {
     width: 315px;
     height: 28px;
-    color: #847A74;
+    color: #847a74;
     font-size: 14px;
     line-height: 21px;
     padding-top: 7px;
@@ -235,8 +227,51 @@ body {
 
   .submain {
     width: 315px;
-    color: #B5967E;
+    color: #b5967e;
     font-size: 15px;
     padding-top: 70px;
+  }
+}
+
+.list4 {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  .number {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: #6c62f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .list4_1 {
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid #6c62f1;
+    background: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  .bold {
+    padding-left: 13px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .light {
+    padding-left: 5px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 300;
   }
 }
